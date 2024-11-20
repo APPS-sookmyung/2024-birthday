@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic&display=swap');
+
+body {
+    background-color: #dbe2eb;
+    width: 98%;
+    height: 100%;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.content_box {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 5px #b7c5db;
+    border-radius: 10px;
+    max-width: 98%;
+    height: 100%;
+    position: relative;
+    margin: 10px;
+    padding-bottom: 10px;
+
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid #b7c5db;
+}
+
+.top_logo {
+    background-color: #ffffff;
+    width: 50%;
+    max-width: 400px;
+    max-height: 50px;
+    border-radius: 50px;
+    margin-top: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 8px 5px #b9f5c7;
+}
+
+.top_logo img {
+    width: 100%;
+    max-width: 100px;
+    margin-top: -12px;
+    margin-left: 10px;
+}
+
+#menu_toggle {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+#body_box {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+#top_box {
+    width: 75%;
+    height: 60px;
+    margin-top: 20px;
+    position: relative;
+    justify-items: center;
+}
+
+#top_box label {
+    font-family: "Nanum Gothic", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#write_date {
+    width: 100px;
+}
+
+#color_box {
+    width: 170px;
+}
+
+.color_button {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+}
+
+.blue {
+    background-color: #CBF3FE;
+    border: 1.5px solid #74c4db;
+}
+
+.pink {
+    background-color: #FFE6EE;
+    border: 1.5px solid #fab8cd;
+}
+
+.yellow {
+    background-color: #FFFACC;
+    border: 1.5px solid #d2c86e;
+}
+
+.green {
+    background-color: #CEFDD3;
+    border: 1.5px solid #7dca85;
+}
+
+.purple {
+    background-color: #E1E5FE;
+    border: 1.5px solid #a1acf4;
+}
+
+#to-day {
+    font-size: 16px;
+    font-weight: bold;
+    top: 10px;
+    text-align: center;
+}
+
+#post_box {
+    width: 75%;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    top: 200px;
+    gap: 40px;
+    justify-content: center;
+    margin: 10px;
+}
+
+#post_content {
+    width: 70%;
+    border-radius: 10px;
+    background-color: #CBF3FE;
+    box-shadow: 0 0 5px 3px #f5fbfa;
+    font-size: 12px;
+    align-items: center;
+}
+
+#kkikki_mini {
+    display: none;
+}
+
+#kkikki_mini img {
+    width: 100px;
+}
+
+#kkikki_mini.active {
+    display: block;
+    top: -20px;
+    left: -65px;
+    position: absolute;
+    z-index: 200;
+}
+
+.menu_position {
+    width: 20%;
+    height: 60%;
+    right: 25px;
+    top: 130px;
+    z-index: 150;
+    position: fixed;
+
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.menu_box {
+    background-color: #f0f6fd;
+    box-shadow: 0 0 7px 5px #cfddf3;
+    border-radius: 10px;
+    width: 180px;
+    min-height: 300px;
+    height: 100%;
+    max-height: 400px;
+
+    position: relative;
+    justify-content: center;
+}
+
+.menu {
+    width: 70%;
+    position: absolute;
+    margin-top: 10px;
+    left: -5px;
+    list-style: none;
+}
+
+.menu li {
+    margin-top: 20px;
+    text-decoration-color: #414141;
+}
+
+.menu li a:link {
+    font-size: 12px;
+    text-decoration: none;
+    color: #414141;
+}
+
+.menu li a:hover {
+    color: #afe7c9;
+}
+
+.profile {
+    width: 90%;
+    height: 70px;
+    background-color: #ffffff;
+    border: 2px solid #ccd6e4;
+    box-shadow: 0 0 7px 5px #cfddf3;
+    border-radius: 40px;
+
+    font-size: 12px;
+    color: #414141;
+
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+
+    display: flex;
+}
+
+.profile_img {
+    border-radius: 50%;
+    background-color: azure;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+
+    margin: 16px 0 16px 16px;
+}
+
+.profile_img img {
+    width: 100%;
+    z-index: 100;
+}
+
+.my_name {
+    margin: 12px;
+    margin-top: 14px;
+    display: grid;
+}
+
+#d-day {
+    color: #ff3eaa;
+}
+
+#grad_box {
+    width: 80%;
+
+    bottom: 0px;
+    margin-bottom: 10px;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+}
+
+#grad_box div {
+    width: 100%;
+    height: 100px;
+
+    background-color: #ffffff;
+    box-shadow: 0 -5px 15px #ffffff;
+}
+
+#grad_box img {
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    position: absolute;
+}
+
+@media (max-width: 900px) {
+    .menu_position {
+        display: none;
+    }
+
+    .menu_box {
+        width: 100%;
+    }
+
+    .menu_position.active {
+        width: 300px;
+        display: block;
+        max-width: 400px;
+    }
+
+    #menu_toggle {
+        display: block;
+    }
+
+    #post_box {
+        width: 95%;
+    }
+
+    #to-day {
+        width: 100%;
+    }
+
+    #grad_box {
+        width: 95%;
+    }
+
+    #top_box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    #post_container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    #post_box {
+        width: 90%;
+        left: 2px;
+    }
+
+    #post_container {
+        column-count: 1;
+    }
+}

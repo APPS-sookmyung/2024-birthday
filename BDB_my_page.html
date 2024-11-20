@@ -14,7 +14,7 @@
             <img id="menu_toggle" src="img/menu_button" alt="menu-img">
             </label>
             <div class="top_logo">
-                <a href="/index.html">
+                <a href="index.html">
                     <img src="img/BDB_logo_new.png" alt="logo_img">
                 </a>
             </div>
@@ -29,30 +29,27 @@
                         <span id="d-day_info"></span>
                     </div>
                 </div>
-                <div id="category_position">
-                    <div id="category_box">
-                        <button class="category" onclick="cateClick()">작성한 글</button>
-                        <button class="category" onclick="cateClick()">좋아한 글</button>
-                        <button class="category" onclick="cateClick()">받은 글</button>
-                    </div>
-                </div>
             </div>
-            <!-- <div id="post_box">
+            <p id="category">내가 작성한 글</p>
+            <div id="post_box">
                 <div id="post_container"></div>
-            </div> -->
+            </div>
         </div>
     </div>
     <div id="grad_box">
         <div></div>
-        <img src="/img/BDB_kkikki_party.png" alt="끼끼">
+        <img src="img/BDB_kkikki_normal.png" alt="끼끼">
     </div>
     <div class="menu_position">
+        <div id="kkikki_mini">
+            <img src="img/BDB_kkikki_mini.png" alt="비밀 끼끼">
+        </div>
         <div class="menu_box">
             <ul class="menu">
                 <li class="menu_detail"><a href="" id="random_link">선물받기</a></li>
-                <li class="menu_detail"><a href="">축하메시지 작성하기</a></li>
-                <li class="menu_detail"><a href="">마이페이지</a></li>
-                <li class="menu_detail"><a href="/BDB_community.html">커뮤니티 가기</a></li>
+                <li class="menu_detail"><a href="BDB_writePost.html">축하메시지 작성하기</a></li>
+                <li class="menu_detail"><a href="BDB_my_page.html">마이페이지</a></li>
+                <li class="menu_detail"><a href="BDB_community.html">커뮤니티 가기</a></li>
             </ul>
             <div class="profile">
                 <div class="profile_img">
@@ -67,10 +64,11 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="/src/components/PostDisplay.js" type="module"></script>
-    <script src="/js/masonryLayout.js"></script>
-    <script src="/js/menu_popup.js"></script>
-    <script src="/js/Dday.js"></script>
+    <script src="src/components/myPostDisplay.js" type="module"></script>
+    <script src="js/masonryLayout.js"></script>
+    <script src="js/menu_popup.js"></script>
+    <script src="js/Dday.js"></script>
+    <script src="js/likeBtn.js" type="module" defer></script>
 </body>
 
 </html>
